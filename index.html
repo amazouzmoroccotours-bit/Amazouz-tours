@@ -1,48 +1,385 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<title>Amazouz Morocco Tours | Discover Morocco Beyond the Ordinary</title>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Luxury private Marrakech tours, Sahara desert adventures, Atlas Mountains trips and VIP Morocco experiences.">
-<style>
-body{margin:0;font-family:Arial;background:#0b0b0b;color:#fff}
-header{background:linear-gradient(to right,#cfa14a,#6b3b07);padding:30px;text-align:center}
-h1{margin:0;font-size:34px}
-.hero{padding:80px 20px;text-align:center;background:url('https://images.unsplash.com/flagged/photo-1551434678-e076c223a692') center/cover}
-.hero h2{font-size:42px}
-.btn{background:#cfa14a;color:#000;padding:15px 35px;border-radius:40px;text-decoration:none;display:inline-block;margin-top:20px;font-weight:bold}
-.section{padding:60px 20px;text-align:center}
-.tours{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:20px}
-.card{background:#111;border-radius:20px;padding:20px}
-footer{background:#000;padding:20px;text-align:center;color:#777}
-</style>
+  <meta charset="UTF-8" />
+  <title>Amazouz Morocco Tours | Desert, Atlas Trekking & City Tours</title>
+  <meta name="description" content="Amazouz Morocco Tours: Merzouga desert tours (3–4 days), Atlas Mountains trekking (1–5 days), Marrakech & Morocco city tours. Book instantly on WhatsApp.">
+  <meta name="keywords" content="Amazouz Morocco Tours, Merzouga 3 days tour, Merzouga 4 days tour, Sahara desert tour, Atlas Mountains trekking, Mount Toubkal trekking, Imlil valley trek, Marrakech tours, Morocco private tours">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <style>
+    :root{
+      --gold:#caa24d;
+      --gold2:#6f4e12;
+      --bg:#000;
+      --card:#111;
+      --muted:#bdbdbd;
+    }
+    *{box-sizing:border-box}
+    body{margin:0;font-family:Arial,Helvetica,sans-serif;background:var(--bg);color:#fff;line-height:1.6}
+    a{color:var(--gold);text-decoration:none}
+    header{
+      background:linear-gradient(to right,var(--gold),var(--gold2));
+      padding:42px 18px;
+      text-align:center
+    }
+    header h1{margin:0;font-size:32px;letter-spacing:1px}
+    header p{margin:8px 0 0;color:#111;font-weight:bold}
+
+    .nav{
+      position:sticky; top:0; z-index:10;
+      background:rgba(0,0,0,.92);
+      border-bottom:1px solid #1b1b1b;
+      padding:10px 12px;
+      display:flex; gap:10px; flex-wrap:wrap; justify-content:center;
+      backdrop-filter: blur(8px);
+    }
+    .nav a{
+      padding:10px 14px;border-radius:999px;
+      background:#121212; border:1px solid #1f1f1f;
+      font-weight:bold; font-size:14px;
+    }
+    .nav a:hover{border-color:var(--gold)}
+
+    .container{max-width:1100px;margin:0 auto;padding:42px 16px}
+    .hero{padding:34px 0;text-align:center}
+    .hero h2{margin:0;font-size:38px}
+    .hero p{color:var(--muted);max-width:820px;margin:14px auto 0}
+    .btn{
+      display:inline-block;
+      background:var(--gold);
+      color:#000;
+      padding:14px 22px;
+      border-radius:999px;
+      font-weight:bold;
+      margin-top:18px;
+    }
+    .btn.secondary{background:#1a1a1a;color:#fff;border:1px solid #2a2a2a}
+    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:16px;margin-top:18px}
+    .card{
+      background:var(--card);
+      border:1px solid #1f1f1f;
+      border-radius:18px;
+      padding:18px;
+      text-align:left;
+    }
+    .badge{
+      display:inline-block;
+      font-size:12px;
+      padding:5px 10px;
+      border-radius:999px;
+      background:#1b1b1b;
+      border:1px solid #2a2a2a;
+      color:var(--gold);
+      margin-bottom:10px;
+    }
+    .card h3{margin:8px 0 6px}
+    .card p{margin:0;color:var(--muted);font-size:14px}
+    .card .meta{margin-top:10px;color:#d7d7d7;font-size:13px}
+    .card .actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:14px}
+    .section-title{margin:0;font-size:26px}
+    .section-sub{margin:8px 0 0;color:var(--muted)}
+
+    .trustbox{
+      background:#0f0f0f;border:1px solid #1f1f1f;border-radius:18px;
+      padding:18px;margin-top:18px
+    }
+    .trust-links{display:flex;gap:12px;flex-wrap:wrap;margin-top:10px}
+    .trust-links a{
+      padding:10px 14px;border-radius:999px;background:#121212;border:1px solid #242424;
+      font-weight:bold;font-size:14px
+    }
+    .trust-links a:hover{border-color:var(--gold)}
+    .contact{
+      display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+      gap:16px;margin-top:16px
+    }
+    .contact .box{background:#0f0f0f;border:1px solid #1f1f1f;border-radius:18px;padding:18px}
+    .contact .box h3{margin:0 0 8px}
+    .small{font-size:13px;color:var(--muted)}
+    iframe{width:100%;border:0;border-radius:18px}
+    footer{padding:26px 12px;text-align:center;color:#8a8a8a;border-top:1px solid #1b1b1b}
+    .divider{height:1px;background:#1b1b1b;margin:26px 0}
+  </style>
 </head>
+
 <body>
 
 <header>
-<h1>AMAZOUZ MOROCCO TOURS</h1>
-<p>Discover Morocco Beyond the Ordinary</p>
+  <h1>AMAZOUZ MOROCCO TOURS</h1>
+  <p>Discover Morocco Beyond the Ordinary</p>
 </header>
 
-<section class="hero">
-<h2>Royal Adventures Across Morocco</h2>
-<p>Private Marrakech tours, Atlas Mountains hikes, Sahara desert camps and VIP Morocco journeys.</p>
-<a href="#" class="btn">Explore Tours</a>
-</section>
+<nav class="nav">
+  <a href="#desert">Desert Tours</a>
+  <a href="#trekking">Atlas Trekking</a>
+  <a href="#cities">City Tours</a>
+  <a href="#blog">Blog</a>
+  <a href="#trust">Trust</a>
+  <a href="#contact">Contact</a>
+</nav>
 
-<section class="section">
-<h2>Top Experiences</h2>
-<div class="tours">
-<div class="card">Marrakech Medina Tour</div>
-<div class="card">Agafay Desert Sunset</div>
-<div class="card">Atlas Mountains Day Trip</div>
-<div class="card">Sahara Desert 3 Days</div>
+<div class="container">
+
+  <!-- HERO -->
+  <section class="hero">
+    <h2>Royal Adventures Across Morocco</h2>
+    <p>
+      Merzouga Sahara desert tours (3–4 days), Atlas Mountains trekking (1–5 days),
+      Marrakech and Morocco city tours — with a trusted local company.
+    </p>
+
+    <a class="btn" href="https://wa.me/212606258056?text=Hello%20Amazouz%20Morocco%20Tours,%20I%20want%20to%20book%20a%20tour.%0ADate:%20%0APersons:%20%0AHotel/Riad:%20">
+      Book on WhatsApp
+    </a>
+
+    <a class="btn secondary" href="#desert">Explore Tours</a>
+  </section>
+
+  <div class="divider"></div>
+
+  <!-- DESERT -->
+  <section id="desert">
+    <h2 class="section-title">🏜️ Desert Tours (Merzouga & Sahara)</h2>
+    <p class="section-sub">High Atlas crossing • Ait Ben Haddou • Camel trekking • Desert camp • Sunrise & Sunset</p>
+
+    <div class="grid">
+      <div class="card">
+        <span class="badge">Best Seller</span>
+        <h3>Merzouga 3 Days Desert Tour (From Marrakech)</h3>
+        <p>High Atlas • Ait Ben Haddou • Dades/Todra • Camel trek • Night in desert camp</p>
+        <div class="meta">Duration: 3 Days / 2 Nights • Style: Standard</div>
+        <div class="actions">
+          <a class="btn" href="https://wa.me/212606258056?text=Hello%20Amazouz,%20I%20want%20to%20book%20Merzouga%203%20Days%20Desert%20Tour%20from%20Marrakech.%0ADate:%20%0APersons:%20%0AHotel/Riad:%20">Book Now</a>
+          <a class="btn secondary" href="#contact">Ask a Question</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <span class="badge">More Time</span>
+        <h3>Merzouga 4 Days Desert Tour (From Marrakech)</h3>
+        <p>Extra stops • More comfort • More valleys • Camel trek • Luxury camp option</p>
+        <div class="meta">Duration: 4 Days / 3 Nights • Style: Standard</div>
+        <div class="actions">
+          <a class="btn" href="https://wa.me/212606258056?text=Hello%20Amazouz,%20I%20want%20to%20book%20Merzouga%204%20Days%20Desert%20Tour%20from%20Marrakech.%0ADate:%20%0APersons:%20%0AHotel/Riad:%20">Book Now</a>
+          <a class="btn secondary" href="#trust">See Trust Links</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <span class="badge">Custom</span>
+        <h3>Marrakech → Fes via Merzouga (4 Days)</h3>
+        <p>Perfect if you want to finish in Fes. Includes Sahara dunes & cultural stops.</p>
+        <div class="meta">Duration: 4 Days • Route: Marrakech → Fes</div>
+        <div class="actions">
+          <a class="btn" href="https://wa.me/212606258056?text=Hello%20Amazouz,%20I%20want%20Marrakech%20to%20Fes%20via%20Merzouga%20(4%20Days).%0ADate:%20%0APersons:%20%0AHotel/Riad:%20">Book Now</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <!-- TREKKING -->
+  <section id="trekking">
+    <h2 class="section-title">🏔️ Atlas Mountains Trekking (1–5 Days)</h2>
+    <p class="section-sub">Imlil Valley • Berber villages • Mountain passes • Mount Toubkal trekking (Standard)</p>
+
+    <div class="grid">
+      <div class="card">
+        <span class="badge">1 Day</span>
+        <h3>Atlas Mountains Day Hike (From Marrakech)</h3>
+        <p>Easy–moderate hike with valley views, villages, and nature.</p>
+        <div class="meta">Duration: 1 Day • Level: Easy–Moderate</div>
+        <div class="actions">
+          <a class="btn" href="https://wa.me/212606258056?text=Hello%20Amazouz,%20I%20want%20Atlas%20Mountains%201%20Day%20Trek.%0ADate:%20%0APersons:%20%0AHotel/Riad:%20">Book Now</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <span class="badge">2 Days</span>
+        <h3>Imlil Valley 2 Days Trek (Guesthouse)</h3>
+        <p>Berber villages + overnight in mountain guesthouse (Standard).</p>
+        <div class="meta">Duration: 2 Days / 1 Night • Level: Moderate</div>
+        <div class="actions">
+          <a class="btn" href="https://wa.me/212606258056?text=Hello%20Amazouz,%20I%20want%20Imlil%20Valley%202%20Days%20Trek.%0ADate:%20%0APersons:%20%0AHotel/Riad:%20">Book Now</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <span class="badge">3 Days</span>
+        <h3>Mount Toubkal 3 Days Trek (Standard)</h3>
+        <p>Refuge stay + summit attempt (highest peak in North Africa).</p>
+        <div class="meta">Duration: 3 Days / 2 Nights • Level: Challenging</div>
+        <div class="actions">
+          <a class="btn" href="https://wa.me/212606258056?text=Hello%20Amazouz,%20I%20want%20Mount%20Toubkal%203%20Days%20Trek.%0ADate:%20%0APersons:%20%0AHotel/Riad:%20">Book Now</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <span class="badge">4 Days</span>
+        <h3>Toubkal Circuit 4 Days Trek</h3>
+        <p>Passes + valleys + remote villages. Great for strong hikers.</p>
+        <div class="meta">Duration: 4 Days • Level: Moderate–Challenging</div>
+        <div class="actions">
+          <a class="btn" href="https://wa.me/212606258056?text=Hello%20Amazouz,%20I%20want%20Toubkal%20Circuit%204%20Days%20Trek.%0ADate:%20%0APersons:%20%0AHotel/Riad:%20">Book Now</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <span class="badge">5 Days</span>
+        <h3>Atlas Mountains 5 Days Trek (Deep Experience)</h3>
+        <p>More valleys, villages, culture immersion. Standard trekking.</p>
+        <div class="meta">Duration: 5 Days • Level: Moderate</div>
+        <div class="actions">
+          <a class="btn" href="https://wa.me/212606258056?text=Hello%20Amazouz,%20I%20want%20Atlas%20Mountains%205%20Days%20Trek.%0ADate:%20%0APersons:%20%0AHotel/Riad:%20">Book Now</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <!-- CITIES -->
+  <section id="cities">
+    <h2 class="section-title">🏙️ City Tours & Day Trips</h2>
+    <p class="section-sub">Marrakech • Essaouira • Ouarzazate • Ait Ben Haddou • Valleys & waterfalls</p>
+
+    <div class="grid">
+      <div class="card">
+        <span class="badge">Marrakech</span>
+        <h3>Marrakech: Atlas Mountains, Imlil Valley & Waterfalls Tour</h3>
+        <p>Classic day trip from Marrakech. Great landscapes + refreshing nature.</p>
+        <div class="actions">
+          <a class="btn" href="https://wa.me/212606258056?text=Hello%20Amazouz,%20I%20want%20to%20book%20Atlas%20Mountains,%20Imlil%20Valley%20%26%20Waterfalls%20Tour.%0ADate:%20%0APersons:%20%0AHotel/Riad:%20">Book Now</a>
+          <a class="btn secondary" target="_blank" href="https://www.tripadvisor.com/AttractionProductReview-g293734-d21077624-Marrakech_Atlas_Mountains_Imlil_Valley_Waterfalls_Tour-Marrakech_Marrakech_Safi.html">TripAdvisor Tour</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <span class="badge">Coast</span>
+        <h3>Essaouira Day Trip from Marrakech</h3>
+        <p>Sea breeze, medina, port, and beautiful coastal vibes.</p>
+        <div class="actions">
+          <a class="btn" href="https://wa.me/212606258056?text=Hello%20Amazouz,%20I%20want%20Essaouira%20Day%20Trip%20from%20Marrakech.%0ADate:%20%0APersons:%20%0AHotel/Riad:%20">Book Now</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <span class="badge">UNESCO</span>
+        <h3>Ouarzazate & Ait Ben Haddou Day Trip</h3>
+        <p>Cross the Atlas and visit one of Morocco’s most famous kasbahs.</p>
+        <div class="actions">
+          <a class="btn" href="https://wa.me/212606258056?text=Hello%20Amazouz,%20I%20want%20Ouarzazate%20%26%20Ait%20Ben%20Haddou%20Day%20Trip.%0ADate:%20%0APersons:%20%0AHotel/Riad:%20">Book Now</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <span class="badge">Waterfalls</span>
+        <h3>Ouzoud Waterfalls Day Trip</h3>
+        <p>Morocco’s famous waterfalls with scenic viewpoints and nature.</p>
+        <div class="actions">
+          <a class="btn" href="https://wa.me/212606258056?text=Hello%20Amazouz,%20I%20want%20Ouzoud%20Waterfalls%20Day%20Trip.%0ADate:%20%0APersons:%20%0AHotel/Riad:%20">Book Now</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <!-- BLOG (in-page) -->
+  <section id="blog">
+    <h2 class="section-title">📰 Blog (SEO Guides by Amazouz)</h2>
+    <p class="section-sub">
+      We publish Atlas trekking + Sahara/Merzouga guides to help travelers — and to rank on Google.
+      (Later we can split each article into its own page.)
+    </p>
+
+    <div class="trustbox">
+      <span class="badge">Article #1</span>
+      <h3>Best Atlas Mountains Trekking Routes in Morocco</h3>
+      <p class="small">
+        The Atlas Mountains are Morocco’s top trekking destination. Below are the most popular routes:
+        Mount Toubkal (3 days), Imlil Valley (1–2 days), Azzaden Valley (3–4 days), Toubkal Circuit (4–5 days),
+        and deeper 5 days Atlas trekking programs.
+      </p>
+      <p class="small">
+        Want this full article as a separate SEO page? Message us and we will publish it as /blog/ pages.
+      </p>
+      <a class="btn" href="https://wa.me/212606258056?text=Hello%20Amazouz,%20please%20publish%20more%20blog%20articles%20(Atlas%20%2B%20Sahara)%20on%20amazouztours.com.%20I%20want%20500%2B%20SEO%20articles.%20Start%20with%20Atlas%20trekking%20routes%20%2B%20Merzouga%20guides.">Request More Articles</a>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <!-- TRUST -->
+  <section id="trust">
+    <h2 class="section-title">✅ Trust & Reviews</h2>
+    <p class="section-sub">Official links (TripAdvisor, TrustIndex, Google Maps) to build confidence.</p>
+
+    <div class="trustbox">
+      <div class="trust-links">
+        <a target="_blank" href="https://www.tripadvisor.com/Attraction_Review-g293734-d26819429-Reviews-Amazouz_Morocco_Tours-Marrakech_Marrakech_Safi.html">TripAdvisor Reviews</a>
+        <a target="_blank" href="https://www.trustindex.io/reviews/www.amazouzmoroccotours.com">TrustIndex</a>
+        <a target="_blank" href="https://share.google/6gaP2EboiajkS4mZm">Google Maps</a>
+        <a target="_blank" href="https://www.instagram.com/amazouzmoroccotours?utm_source=qr&igsh=M3Bja3k3bGZkcGwz">Instagram</a>
+        <a target="_blank" href="https://www.facebook.com/share/1ECVLUMoZu/">Facebook</a>
+      </div>
+      <p class="small" style="margin-top:12px;">
+        If you want, we can also embed TrustIndex widget inside this page later (needs widget embed code).
+      </p>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <h2 class="section-title">📩 Contact Amazouz</h2>
+    <p class="section-sub">Fast reply on WhatsApp. Email available for formal requests.</p>
+
+    <div class="contact">
+      <div class="box">
+        <h3>WhatsApp / Phone</h3>
+        <p style="margin:0"><b>+212 606 258 056</b></p>
+        <p class="small">Click to chat:</p>
+        <a class="btn" href="https://wa.me/212606258056?text=Hello%20Amazouz%20Morocco%20Tours,%20I%20have%20a%20question%20about%20tours.%20">WhatsApp Now</a>
+        <div style="margin-top:10px" class="small">
+          Or call: <a href="tel:+212606258056">+212606258056</a>
+        </div>
+      </div>
+
+      <div class="box">
+        <h3>Email</h3>
+        <p style="margin:0"><b>Amazouzmoroccotours@gmail.com</b></p>
+        <p class="small">Click to email:</p>
+        <a class="btn" href="mailto:Amazouzmoroccotours@gmail.com?subject=Booking%20Request%20-%20Amazouz%20Morocco%20Tours">Send Email</a>
+      </div>
+
+      <div class="box">
+        <h3>Location (Map)</h3>
+        <p class="small">Open official map link:</p>
+        <a class="btn secondary" target="_blank" href="https://share.google/6gaP2EboiajkS4mZm">Open Google Maps</a>
+      </div>
+    </div>
+
+    <div style="margin-top:16px">
+      <iframe
+        height="320"
+        src="https://maps.google.com/maps?q=Marrakech&t=&z=12&ie=UTF8&iwloc=&output=embed"
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
+      <div class="small" style="margin-top:8px">
+        (We can later replace “Marrakech” with your exact pinned place once you send the direct embed location.)
+      </div>
+    </div>
+  </section>
+
 </div>
-</section>
 
 <footer>
-© 2026 Amazouz Morocco Tours
+  © 2026 Amazouz Morocco Tours • WhatsApp +212 606 258 056 • Email Amazouzmoroccotours@gmail.com
 </footer>
 
 </body>
